@@ -1,3 +1,4 @@
+// Этот пакет создан для считывания значений, введённых пользователем.
 package keyboard
 
 import (
@@ -7,6 +8,7 @@ import (
 	"strings"
 )
 
+// эта функция возвращает введённое пользователем число
 func GetFloat() (float64, error) {
 	reader := bufio.NewReader(os.Stdin)
 	input, err := reader.ReadString('\n')
